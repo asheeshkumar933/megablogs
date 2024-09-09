@@ -1,5 +1,5 @@
 import LoadingSpinner from "./Loading/Loading.jsx";
-import Header from "./Header/Heade.jsx";
+import Header from "./Header/Header.jsx";
 import Footer from "./Footer/Footer.jsx";
 import Logout_btn from "./Header/Logout_btn.jsx";
 import Container from "./container/Container.jsx";
