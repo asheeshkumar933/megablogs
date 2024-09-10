@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
-import { LoadingSpinner } from "./components";
+import { Header1, LoadingSpinner } from "./components";
 import "./App.css";
 import authService from "./service/auth";
 import { login, logout } from "./store/authSlice";
 import { useDispatch } from "react-redux";
 import { Outlet } from "react-router-dom";
+import { Footer, Header ,Footer1} from "./components/index.js";
 
-import { Footer, Header } from "./components/index.js";
+
 function App() {
   const [loading, setloading] = useState(true);
   const dispatch = useDispatch();
@@ -38,11 +39,11 @@ function App() {
   return (
     <div className="min-h-screen flex flex-wrap content-between bg-white">
       <div className="w-full block">
-        <Header />
+        <Header1 />
         <main>
           <Outlet />
         </main>
-        <Footer />
+        <Footer1 />
       </div>
     </div>
   );
