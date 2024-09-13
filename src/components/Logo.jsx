@@ -1,8 +1,10 @@
 import React from "react";
+import {Link } from 'react-router-dom'
 
 function Logo({ width = "100px" }) {
   return <div className="">
 
+<Link to={"/"}>
 <div className="inline-flex items-center space-x-2">
           <span>
             <svg
@@ -20,6 +22,8 @@ function Logo({ width = "100px" }) {
           </span>
           <span className="font-bold">DevUI</span>
         </div>
+
+</Link>
      {/* <img
                 src="/blog wirte logo.PNG" // Correct path for public folder
                 className="mr-3 h-16 w-auto " // Increase height and auto width

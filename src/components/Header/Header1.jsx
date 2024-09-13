@@ -54,7 +54,8 @@ function Header1() {
         <div className="hidden grow items-start lg:flex justify-end  ">
           <ul className="ml-12 inline-flex space-x-8">
             {menuItems.map((item) =>
-              item.active ? (
+              item.active ? ( 
+                
                 <li key={item.name}>
                   <button
                     onClick={() => navigate(item.slug)}

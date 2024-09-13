@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
+import {Logo} from "../index.js"
 
 function Footer() {
   return (
@@ -9,12 +10,15 @@ function Footer() {
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
               <Link to="/" className="flex items-center">
+              <Logo/>
+
+
                 {/* Adjust the height and width classes */}
-                <img
+                {/* <img
                   src="/blog wirte logo.PNG" // Correct path for public folder
                   className="mr-3 h-24 w-auto" // Increase height and auto width
                   alt="Logo"
-                />
+                /> */}
               </Link>
             </div>
           </div>
@@ -37,7 +41,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://zomato-web-rho.vercel.app"
+                    href="https://portfolio-repo-five.vercel.app/"
                     className="hover:underline"
                     target="_blank"
                     rel="noopener noreferrer"

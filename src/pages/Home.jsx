@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import service from "../service/dbConfig";
 import { Container, PostCard } from "../components";
-import authService from "../service/auth";
+import { AuthService } from "../service/auth";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -79,7 +79,9 @@ function Home() {
       <Container>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {posts.map((post) => (
-            <div key={post.$id} className="p-2">
+            <div key={post.$id} 
+
+            className= {({isActive}) => `${isActive ? "text-orange-700" : "text-gray-700"} ` }>
               <PostCard {...post} />
             </div>
           ))}
