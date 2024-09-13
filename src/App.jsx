@@ -43,7 +43,7 @@ function App() {
         <main>
           <Outlet />
         </main>
-        <Footer1 />
+        <Footer />
       </div>
     </div>
   );
