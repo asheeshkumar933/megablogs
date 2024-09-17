@@ -14,7 +14,7 @@ export default function AllPosts() {
   }, []);
 
   return (
-    <div className="w-full py-8">
+    <div className=" bg-gray-100 w-full py-8">
       <Container>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {posts.map((post) => (

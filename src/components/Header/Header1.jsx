@@ -48,7 +48,7 @@ function Header1() {
   ];
 
   return (
-    <div className=" w-full bg-white  shadow sticky z-50 top-0">
+    <div className=" w-full bg-gray-300  shadow sticky z-50 top-0">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
        <Logo/>
         <div className="hidden grow items-start lg:flex justify-end  ">

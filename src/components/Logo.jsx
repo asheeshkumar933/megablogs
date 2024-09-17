@@ -6,7 +6,7 @@ function Logo({ width = "100px" }) {
 
 <Link to={"/"}>
 <div className="inline-flex items-center space-x-2">
-          <span>
+          <Link>
             <svg
               width="30"
               height="30"
@@ -19,8 +19,8 @@ function Logo({ width = "100px" }) {
                 fill="black"
               />
             </svg>
-          </span>
-          <span className="font-bold">DevUI</span>
+          </Link>
+          <span className="font-bold">TechBlog</span>
         </div>
 
 </Link>
